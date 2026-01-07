@@ -29,6 +29,26 @@ A concise explanation of JavaScript Call Stack and Execution Context concepts wi
 - `var square2 = square(a);` — calling `square` creates an FEC where `num` is `10`, `ans` becomes `100`. The FEC returns `100` and is popped; `square2` in GEC becomes `100`.
 - Next `var square4 = square(4);` — similar process: new FEC, `num: 4`, `ans: 16`, return `16`, pop FEC, store in `square4`.
 
+**Hoisting**
+![Hoisting (add image to Assets/hoisting.png if desired)](Assets/hoisting2.png)
+
+- **What hoisting means**: Declarations using `var` and function declarations are processed during the creation phase of the execution context — their names are added to memory before code runs. `var` variables are hoisted but initialized to `undefined`. `let` and `const` are not accessible before initialization (they are in the temporal dead zone). Function declarations are hoisted with their full definitions; function expressions assigned to variables follow variable hoisting rules.
+- **Key behaviors in `Hoisting.js`**:
+	- `getName();` works because `getName` is a function declaration and is hoisted with its body.
+	- `console.log(greet);` prints `undefined` because `greet` is a `var` variable; the variable name is hoisted but the arrow function assignment runs later.
+	- `console.log(day);` prints `undefined` for the same reason — the `var` binding exists but the function expression is not assigned yet.
+	- `console.log(x);` prints `undefined` (hoisted `var x`).
+	- `console.log(y);` throws `ReferenceError` because `y` is declared with `let` and is in the temporal dead zone until its declaration is executed.
+
+**Try it**
+- Run the hoisting example with Node.js:
+
+```bash
+node Hoisting.js
+```
+
+You should observe the outputs and the `ReferenceError` explained above.
+
 **Notes & Next Steps**
 - If the images do not appear, add the PNG files into the `Assets/` folder as `call_stack.png` and `global_execution_context.png`.
 - Want me to add the image files into `Assets/` now? I can place them if you provide the image files or allow me to embed the provided attachments into the repo.
