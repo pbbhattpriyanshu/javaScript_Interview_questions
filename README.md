@@ -17,7 +17,7 @@ A concise explanation of JavaScript Call Stack and Execution Context concepts wi
 - **Example (conceptual)**: If `first()` calls `second()`, the stack will have `GEC` → `first` → `second`. When `second` returns, it's popped, then `first` finishes and is popped.
 
 **Global Execution Context (GEC) & Function Execution Contexts (FECs)**
-![Global Execution Context](Assets/global_execution_context.png)
+![Global Execution Context](Assets/execution_context.png)
 
 - **GEC**: Created when the program starts. It contains the global variable environment (variables, function declarations) and the code/thread of execution.
 - **FEC**: Each function call creates its own execution context with its own memory (local variables, parameters) and a pointer to the function code.
