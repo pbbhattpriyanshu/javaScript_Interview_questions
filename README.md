@@ -49,6 +49,26 @@ node Hoisting.js
 
 You should observe the outputs and the `ReferenceError` explained above.
 
+**Function Scope & Globals**
+![Function Scope](Assets/function.png)
+
+- **What it demonstrates**: Functions create their own local scope. Variables declared inside a function with `let` or `var` are local to that function. Assigning to a variable name that exists in an outer (enclosing) scope updates that outer variable.
+- **Walkthrough using `Function_Work.js`**:
+	- `let x = 10;` — creates a global variable `x` in the GEC.
+	- `test1();` — `test1` declares a local `x = 20` and logs `20`.
+	- `test2();` — `test2` declares a local `x = 30` and logs `30`.
+	- `console.log(x);` — logs the global `x`, which remains `10` at this point.
+	- `test3();` — assigns `x = 40` without a local declaration, which updates the global `x` to `40`; it logs `40`.
+
+**Try it**
+- Run the function-scope example with Node.js:
+
+```bash
+node Function_Work.js
+```
+
+Observe the sequence: `20`, `30`, `10`, `40`.
+
 **Notes & Next Steps**
 - If the images do not appear, add the PNG files into the `Assets/` folder as `call_stack.png` and `global_execution_context.png`.
 - Want me to add the image files into `Assets/` now? I can place them if you provide the image files or allow me to embed the provided attachments into the repo.
