@@ -10,7 +10,7 @@ A concise explanation of JavaScript Call Stack and Execution Context concepts wi
 - See the example source files: [Execution_Context.js](Execution_Context.js), [Call_Stack.js](Call_Stack.js)
 
 **Call Stack**
-![Call Stack](Assets/call_stack.png)
+![Call Stack](Assets/call_stack.PNG)
 
 - **What it is**: The Call Stack is a LIFO (last-in, first-out) data structure that the JavaScript runtime uses to keep track of function execution. Each time a function is called, a new frame (execution context) is pushed onto the stack; when the function returns, its frame is popped.
 - **Key points**: Functions called later are resolved first (they return, then earlier callers resume). Synchronous code uses the call stack; long-running synchronous tasks block the stack.
