@@ -7,5 +7,5 @@ function counter() {
   };
 }
 
-const increment = counter(); //Clousre don't remind values instead it reminds variable, in this case count is the variable
+const increment = counter(); //Clousre don't remind values instead it reminds variable, in this case count is the variable, increment only works is keep function alive
 console.log( increment());
