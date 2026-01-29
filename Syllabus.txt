@@ -1,0 +1,237 @@
+1. JavaScript Fundamentals (Non-Negotiable Basics)
+
+These decide whether the interview continues or politely ends.
+
+Variables
+var, let, const
+Scope differences
+Hoisting basics
+
+Data Types
+Primitive vs non-primitive
+number, string, boolean, null, undefined, symbol, bigint
+typeof quirks (typeof null 👀)
+
+Operators
+Arithmetic, comparison
+== vs ===
+Logical operators
+Ternary operator
+
+Control Flow
+if / else
+switch
+Loops (for, while, do…while)
+break and continue
+
+Functions
+Function declaration vs expression
+Arrow functions
+Parameters vs arguments
+Return values
+
+2. Core JavaScript Concepts (Very Frequently Asked)
+
+This is where interviews actually start testing you.
+
+Execution Context
+Global execution context
+Function execution context
+Call stack
+
+Hoisting (Proper Understanding)
+What gets hoisted
+Why let and const behave differently
+Temporal Dead Zone
+
+Scope
+Global scope
+Function scope
+Block scope
+Lexical scope
+
+Closures
+What a closure is
+Why closures exist
+Real-life use cases (counters, data hiding)
+
+this Keyword
+Global context
+Inside object methods
+Inside functions
+Arrow functions and this
+call, apply, bind
+
+3. Objects & Arrays (Bread and Butter)
+
+Objects
+Object creation methods
+Dot vs bracket notation
+Object mutability
+Shallow vs deep copy
+
+Arrays
+Common methods:
+map, filter, reduce
+forEach vs map
+slice vs splice
+find, some, every
+
+Destructuring
+Object destructuring
+Array destructuring
+Default values
+
+Spread & Rest Operators
+Cloning arrays/objects
+Function arguments
+
+4. Asynchronous JavaScript (High-Value Interview Zone)
+
+This section separates beginners from working developers.
+
+Synchronous vs Asynchronous
+Blocking vs non-blocking
+
+Callbacks
+Callback pattern
+Callback hell
+
+Promises
+Promise states
+then, catch, finally
+Promise chaining
+
+async / await
+How it works internally
+Error handling with try/catch
+
+Event Loop (🔥 Favorite Interview Topic)
+Call stack
+Web APIs
+Microtask queue
+Macrotask queue
+Execution order
+
+Timers
+setTimeout
+setInterval
+clearTimeout
+
+5. Advanced JavaScript Concepts (Product-Company Territory)
+
+Prototype & Inheritance
+Prototype chain
+__proto__ vs prototype
+Class syntax vs prototype
+
+Classes
+Constructor
+Methods
+Inheritance with extends
+super keyword
+
+Memory Management
+Garbage collection basics
+Memory leaks
+Closures causing leaks
+
+Immutability
+Why immutability matters
+Ways to achieve it
+
+Currying
+Function currying
+Partial application
+
+Higher-Order Functions
+Functions returning functions
+Functions accepting functions
+
+6. JavaScript Internals (Impress-the-Interviewer Layer)
+
+How JavaScript Works Under the Hood
+Single-threaded nature
+Why JS is non-blocking
+
+Module Systems
+CommonJS vs ES Modules
+import / export
+
+Strict Mode
+What "use strict" does
+Common errors it prevents
+
+Equality Algorithms
+Abstract equality
+Strict equality
+
+7. Browser & Environment Concepts (Frontend Interviews Love This)
+
+DOM
+What DOM is
+DOM manipulation
+Reflow vs repaint
+
+Events
+Event bubbling
+Event capturing
+Event delegation
+
+Web Storage
+localStorage
+sessionStorage
+Cookies
+
+Networking
+HTTP vs HTTPS
+REST basics
+Status codes
+
+8. Error Handling & Debugging
+
+Types of Errors
+Syntax
+Runtime
+Logical
+
+Error Handling
+try / catch / finally
+Custom errors
+
+Debugging
+Console methods
+Breakpoints
+Call stack inspection
+
+9. Performance & Optimization
+
+Debouncing
+Throttling
+
+Lazy loading
+
+Code splitting (conceptual)
+
+Time & Space Complexity (basic JS logic)
+
+10. Real-World & Interview Twist Questions
+
+Why JavaScript is single-threaded
+Difference between null and undefined
+Why [] == [] is false
+Why {} + {} behaves weirdly
+How setTimeout(fn, 0) works
+How closures help in real apps
+How async/await improves readability
+
+How Interviewers Actually Use This
+
+Service-based companies
+→ Basics, scope, closures, promises, arrays
+
+Product-based companies
+→ Event loop, async, prototypes, performance
+
+Startups
+→ Real-world usage, async handling, clean code                                                 
