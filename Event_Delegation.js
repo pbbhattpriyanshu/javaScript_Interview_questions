@@ -1,0 +1,1 @@
+//Event Delegation: Event delegation is a technique where you delegate the handling of events to a parent element instead of handling them on each child element.
