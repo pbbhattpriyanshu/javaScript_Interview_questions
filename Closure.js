@@ -5,11 +5,34 @@
 function counter() {
   let count = 0;
 
-  return function () {
-    count++;
-    return count;
-  };
+  return {
+    increment: function () {
+      count++;
+      return count;
+    },
+    decrement: function () {
+      count--;
+      return count;
+    },
+    getCount: function () {
+      return count;
+    }
+  }
 }
 
-const increment = counter(); //Clousre don't remind values instead it reminds variable, in this case count is the variable, increment only works is keep function alive
-console.log( increment());
+const counterObj = counter(); //Clousre don't remind values instead it reminds variable, in this case count is the variable, increment only works is keep function alive
+console.log( counterObj.getCount());
+console.log(counterObj.increment());
+console.log(counterObj.increment());
+console.log(counterObj.decrement());
+console.log(counterObj.getCount());
+
+
+
+
+//Why we use closure
+// 1. Data Privacy
+// 2. Function Factories
+// 3. Memoization
+// 4. Event Handlers
+// 5. Currying
