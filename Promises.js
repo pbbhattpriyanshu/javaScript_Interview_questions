@@ -3,8 +3,6 @@
 
 const response = fetch('https://jsonplaceholder.typicode.com/todos/2');
 const data = response.then((res) => res.json())
-console.log(data);
-
 
 function fetchData() {
     return new Promise((resolve, reject) => {
